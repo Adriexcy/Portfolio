@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Serif";
+    background-color: #cae6eb;
+    color: #333;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background: #d8edf7;
+    padding: 30px 0;
+    align-items: center;
+    margin-bottom: 50px;
+    color: #2b1717;
+    font-size: 22px;
+}
+
+#navbar a {
+    color: #2b2222;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#navbar a:hover {
+    color: #ccc;
+}
+
+#github-img,
+#resume-img
+#doc-img {
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition for multiple effects */
+}
+
+a:hover #github-img,
+a:hover #resume-img {
+    transform: scale(1.1); /* Slight zoom effect for visibility */
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+#profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-text img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+#profile h2 {
+    font-size: 43px;
+}
+
+#profile-text p{
+    color: #0f2124;
+    font-size: 20px;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#about,
+#projects,
+#exp {
+    position: relative;
+    width: 60%;
+    margin: 30px auto;
+    background-color: #d8edf7;
+    padding: 30px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.illustration {
+    position: absolute; /* Allows precise positioning within the block */
+    bottom: -20px; /* Partially moves the image below the block */
+    right: 225px; /* Partially moves the image outside the block on the right */
+    width: 80px; /* Adjusted size to be smaller and proportional */
+    height: auto; /* Maintains aspect ratio */
+    z-index: 1; /* Keeps the image behind the block content */
+    opacity: 0.7; /* Optional: Subtle transparency for effect */
+    pointer-events: none; /* Prevents interaction with the image */
+}
+
+#about p{
+    color: #142a2e;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #333;
+}
+
+#projects h2,
+#about h2,
+#exp h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#about h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.project,
+.job {
+    background: #dedede;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 75%;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#projects li,
+.job li {
+    margin-left: 25px;
+}
+
+button {
+    padding: 0.4rem 0.8rem;
+    border: 0.2rem solid #333;
+    border-radius: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dedede;
+    color: #333;
+}
+
+.github {
+    border-width: 0.15rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 16px;
+}
+
+.doc {
+    border-width: 0.13rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 16px;
+}
+
+.project button {
+    padding-left: 0.5rem;
+}
+
+.project button:hover {
+    color: #333;
+}
+
+button:hover .github-inline {
+    filter: invert(0);
+}
+
+.github-inline {
+    margin-bottom: -3.5px;
+    margin-right: 1px;
+    filter: invert(1);
+}
+
+.toggler {
+    position: absolute;
+    background-color: #333;
+    cursor: pointer;
+    left: 0;
+    font-size: medium;
+    color: #fff;
+    margin-top: 0;
+}
